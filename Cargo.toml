@@ -24,9 +24,11 @@ oxipng = { version = "9", default-features = false, features = ["filetime", "par
 pdf-writer = "0.9"
 pdfium-render = "0.8.6"
 termcolor = "1.2"
-usvg = { version = "0.38.0", default-features = false, features = ["text"] }
+#usvg = { version = "0.38.0", default-features = false, features = ["text"] }
+usvg = { path = "../resvg/crates/usvg", version = "0.38.0", default-features = false, features = ["text"] }
 tiny-skia = "0.11.3"
-resvg = { version = "0.38.0" }
+#resvg = { version = "0.38.0" }
+resvg = { path = "../resvg/crates/resvg", version = "0.38.0" }
 
 [package]
 name = "svg2pdf"
